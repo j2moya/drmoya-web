@@ -1,20 +1,23 @@
 <!DOCTYPE html>
 <html lang="es">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <title>Dr. José Moya | Salud Óptima</title>
   <style>
-    body { font-family: sans-serif; margin: 0; padding: 0; background: #f8f9fa; color: #222; }
-    header { background: #000; color: white; padding: 1.5rem; text-align: center; }
-    nav { background: #222; display: flex; justify-content: center; gap: 1.5rem; padding: 0.5rem; }
+    body { font-family: sans-serif; margin: 0; padding: 0; background: #f8f9fa; color: #222; text-align: center; }
+    header { background: #000; color: white; padding: 1.5rem; }
+    nav { background: #222; display: flex; justify-content: center; gap: 1.5rem; padding: 0.5rem; flex-wrap: wrap; }
     nav a { color: white; text-decoration: none; font-weight: bold; }
     section { padding: 2rem; max-width: 960px; margin: auto; }
     h2 { color: #111; margin-bottom: 0.5rem; }
     p { line-height: 1.6; }
-    .video-grid, .button-grid { display: flex; flex-wrap: wrap; gap: 1rem; }
-    .button-grid button, .video-grid a { padding: 0.6rem 1rem; border: 1px solid #aaa; border-radius: 5px; background: white; cursor: pointer; text-decoration: none; color: #333; }
-    .promo-box { background: #0077cc; color: white; padding: 1rem; border-radius: 8px; text-align: center; margin: 1rem 0; }
+    .link-box a { display: block; margin: 0.5rem 0; color: #0077cc; font-weight: bold; text-decoration: none; }
+    .contact-box { margin-top: 2rem; background: #e9f5ff; padding: 1rem; border-radius: 10px; }
+    .contact-box a { display: inline-block; margin: 0.5rem 1rem 0.5rem 0; text-decoration: none; background: #0077cc; color: white; padding: 0.6rem 1rem; border-radius: 5px; font-weight: bold; }
+    .credenciales img { max-width: 90%; height: auto; border: 1px solid #ccc; margin-top: 2rem; display: none; }
+    .mostrar { display: block !important; }
+    .toggle-btn { margin-top: 2rem; padding: 0.8rem 1.5rem; background-color: #0077cc; color: white; border: none; border-radius: 5px; font-size: 1rem; font-weight: bold; cursor: pointer; }
     footer { text-align: center; padding: 1rem; font-size: 0.85rem; color: #666; }
   </style>
 </head>
@@ -25,47 +28,36 @@
   </header>
 
   <nav>
-    <a href="#inicio">Inicio</a>
-    <a href="#oir">OÍR</a>
-    <a href="#ver">VER</a>
-    <a href="#leer">LEER</a>
-    <a href="#ayuda">Ayuda Profesional</a>
+    <a href="https://amazon.com/author/josemoya" target="_blank">LEER (Libros)</a>
+    <a href="https://aahhoo.com/a/" target="_blank">LEER (Artículos)</a>
+    <a href="https://open.spotify.com/show/2ulPvbXVQt4EkWAKJprAx7" target="_blank">OÍR (Podcast)</a>
+    <a href="https://www.youtube.com/playlist?list=PLm6zt2JdALrFynt6cA8KyQJgN-4MMW0Iw" target="_blank">VER (Videos)</a>
+    <a href="https://calendly.com/aahhoo/citas" target="_blank">Ayuda Profesional</a>
   </nav>
 
-  <section id="inicio">
+  <section>
     <h2>Bienvenido</h2>
-    <p>¡Bienvenidos a <strong>drmoya.com</strong>! Aquí encontrarás la perfecta fusión de ciencia y bienestar para transformar tu vida. ¡Descubre, escucha y aprende con nosotros!</p>
-  </section>
-
-  <section id="leer">
-    <h2>LEER (Artículos y Libros)</h2>
-    <p>¡Bienvenidos al centro de ayuda INTRURA! Aquí encontrarás artículos confiables, prácticos y herramientas para tu bienestar. Interactúa, comenta y evoluciona con nosotros.</p>
-    <div class="button-grid">
-      <button>Suscríbete</button>
-      <button>Pág. de Autor</button>
+    <p>Explora mis contribuciones en medicina, vitiligo, genómica y educación de salud. Aquí encontrarás contenido en múltiples formatos para empoderar pacientes y profesionales.</p>
+    
+    <div class="link-box">
+      <a href="https://amazon.com/author/josemoya" target="_blank">📚 Libros publicados en Amazon</a>
+      <a href="https://aahhoo.com/a/" target="_blank">📝 Artículos médicos y educativos</a>
+      <a href="https://open.spotify.com/show/2ulPvbXVQt4EkWAKJprAx7" target="_blank">🎧 Podcast en Spotify: Pida Salud</a>
+      <a href="https://www.youtube.com/playlist?list=PLm6zt2JdALrFynt6cA8KyQJgN-4MMW0Iw" target="_blank">🎥 Reels y videos sobre Vitiligo</a>
+      <a href="https://calendly.com/aahhoo/citas" target="_blank">📅 Agendar asesoría profesional</a>
     </div>
-    <div class="promo-box">
-      <strong>Suscríbete a INTRURA por solo</strong>
-      <h3>$5 al mes</h3>
-      <p>o $40 al año y accede a contenido exclusivo</p>
+
+    <div class="contact-box">
+      <h3>📬 ¿Deseas recibir actualizaciones o contactar directamente?</h3>
+      <a href="mailto:salud@drmoya.com?subject=Quiero%20recibir%20notificaciones%20de%20contenido&body=Hola%2C%20Dr.%20Moya%2C%20me%20gustaría%20mantenerme%20informado%20sobre%20sus%20nuevas%20publicaciones%20y%20contenidos." target="_blank">✉️ Escribir por Email</a>
+      <a href="https://wa.me/17865644249?text=Hola%20Dr.%20Moya%2C%20quiero%20recibir%20sus%20videos%20y%20novedades%20de%20salud." target="_blank">💬 WhatsApp Directo</a>
+      <a href="https://t.me/drjmoya" target="_blank">📢 Canal de Telegram</a>
     </div>
-  </section>
 
-  <section id="ver">
-    <h2>VER (Videos)</h2>
-    <p>No querrás perderte nuestros videos: ciencia, salud, empatía y más. Presentado con claridad y cercanía. ¡Suscríbete al canal y mantente informado!</p>
-    <iframe width="100%" height="315" src="https://www.youtube.com/embed/YOUTUBE_VIDEO_ID" frameborder="0" allowfullscreen></iframe>
-  </section>
-
-  <section id="oir">
-    <h2>OÍR (Podcast)</h2>
-    <p>Descubre lo último en medicina, nutrición, ejercicio, genómica clínica y bienestar. Escúchanos mientras trabajas o te relajas. ¡Transforma tu salud con nosotros!</p>
-    <iframe style="border-radius:12px" src="https://open.spotify.com/embed/episode/SPOTIFY_EPISODE_ID" width="100%" height="152" frameborder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>
-  </section>
-
-  <section id="ayuda">
-    <h2>Ayuda Profesional</h2>
-    <p>Ofrezco asesoramiento personalizado, flexible y de calidad. Gracias a alianzas con REGUS y MARRIOTTS, puedes acceder a consultas desde múltiples ubicaciones y horarios.</p>
+    <button class="toggle-btn" onclick="document.querySelector('.credenciales img').classList.toggle('mostrar')">Ver algunas credenciales</button>
+    <div class="credenciales">
+      <img src="https://aahhoo.com/assets/img/credenciales.png" alt="Credenciales del Dr. Moya" />
+    </div>
   </section>
 
   <footer>
