@@ -1,0 +1,3 @@
+/leer    https://aahhoo.com/a/   301
+/oir     https://open.spotify.com/show/2ulPvbXVQt4EkWAKJprAx7   301
+/ver     https://www.youtube.com/playlist?list=PLm6zt2JdALrFynt6cA8KyQJgN-4MMW0Iw   301
